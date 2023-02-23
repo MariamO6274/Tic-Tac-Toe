@@ -42,6 +42,9 @@ body {
   align-items: center;
 }
 
+#board {
+  display: none;
+}
 .home-header {
   display: flex;
   align-items: center;
@@ -82,6 +85,7 @@ body {
   border-radius: 10px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .x-icon,
@@ -95,4 +99,39 @@ body {
 
 .active svg path {
   fill: var(--darkBg);
+}
+
+.warning {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.64px;
+  letter-spacing: 0.88 px;
+  color: var(--light);
+  opacity: 0.5;
+  margin-top: 17px;
+}
+
+.new-game-btn {
+  width: 327px;
+  padding: 14px 0px 28px 0px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+}
+
+.cpu-btn {
+  background-color: var(--orange);
+  margin-top: 32px;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+.btn-text {
+  color: var(--darkBg);
+}
+
+.player-btn {
+  background-color: var(--sky);
+  margin-top: 16px;
+  box-shadow: inset 0px -8px 0px #118c87;
 }
