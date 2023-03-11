@@ -21,6 +21,7 @@ const activateChoice = (icon) => {
 const startGame = (modeParam) => {
   home.style.display = "none";
   board.style.display = "flex";
+  document.body.style.alignItems = "flex-start";
   mode = modeParam;
   console.log(mode);
 };
