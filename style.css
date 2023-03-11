@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 :root {
@@ -35,7 +36,8 @@ body {
 }
 
 /* home section სდაც დივი მიზის და 2 სურათი X და 0*/
-#home {
+#home,
+#board {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -134,4 +136,48 @@ body {
   background-color: var(--sky);
   margin-top: 16px;
   box-shadow: inset 0px -8px 0px #118c87;
+}
+
+#board {
+  display: none;
+}
+
+.board-header {
+  width: 328px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 24px; */
+}
+
+.turn-box {
+  width: 96px;
+  height: 40px;
+  box-shadow: inset 0px -4px 0px #10212a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.turn-box img {
+  width: 16px;
+}
+.turn-box h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.64px;
+  letter-spacing: 0.88px;
+  color: var(--light);
+  text-transform: uppercase;
+}
+.restart {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--light);
+  box-shadow: inset 0px -4px 0px #6b8997;
+  border-radius: 5px;
 }
